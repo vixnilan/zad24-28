@@ -1,0 +1,27 @@
+<textarea rows="40" cols="70">
+<html>
+ <head>
+ <script type="text/javascript">
+ 
+ function owoc(nazwa_k,gatunek_k,waga_k)
+{
+this.nazwa=nazwa_k;
+this.gatunek=gatunek_k;
+this.waga=waga_k;
+}
+ owoc.prototype.wypisz = function () 
+ {
+ alert(this.nazwa + ' ' + this.gatunek+ ' ' + this.waga);
+ };
+var owoc1 = new owoc("pomarancz", "chinska", "240 gram"); 
+var owoc2 = new owoc('pomarancz', 'olbrzymia', '4 kilo');
+owoc1.wypisz(); 
+owoc2.wypisz();
+ document.write("owoc pierwszy"+" "+owoc1.nazwa+" "+owoc1.gatunek+" "+owoc1.waga + "<br>");
+ document.write("owoc drugi"+" "+owoc2.nazwa+" "+owoc2.gatunek+" "+owoc2.waga);
+</script>
+</head>
+<body>
+</body>
+</html>
+</textarea>
